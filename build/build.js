@@ -32,12 +32,12 @@ var NoteDisplay = (function () {
     this.canvas = document.getElementById("stave"); // Create an SVG renderer and attach it to the DIV element named "stave".
 
     this.renderer = new this.VF.Renderer(this.canvas, this.VF.Renderer.Backends.SVG);
-    this.renderer.resize(220, 120);
+    this.renderer.resize(220, 150);
 
     this.context = this.renderer.getContext(); // Configure the rendering context.
     this.context.setFont("Arial", 10, "").setBackgroundFillStyle("#eed");
 
-    this.stave = new this.VF.Stave(10, 0, 200); // Create a stave of width 400 at position 10, 40 on the canvas.]
+    this.stave = new this.VF.Stave(10, 30, 200); // Create a stave of width 400 at position 10, 40 on the canvas.]
 
     this.stave.addClef(this.clef); // Add a clef and time signature.
     this.stave.setContext(this.context).draw(); // Connect it to the rendering context and draw!
