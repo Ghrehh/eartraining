@@ -1,0 +1,70 @@
+<html>
+  <head>
+    <title>Ear Training</title>
+    
+    <script src="jquery.min.js"></script>
+    <script src="audiosynth.js"></script>
+    <script src="vexflow.min.js"></script>
+    <script src="build.js"></script>
+    
+    <script src="https://use.typekit.net/aze3udt.js"></script>
+    <script>try{Typekit.load({ async: true });}catch(e){}</script>
+    
+    <link href="./css/reset.css" rel="stylesheet">
+    <link href="./css/bootstrap.min.css" rel="stylesheet">
+    <link href="./css/main.css" rel="stylesheet">
+  </head>
+  
+  <body>
+    <div class="container">
+      <div class="col-sm-1"></div>
+      <div class="col-sm-10">
+        <h1 class="title musec">Ear Training</h1>
+        <h3 class="sub-title">Random Interval</h3>
+        <div class="container-fluid">
+          
+          <div class="col-sm-3">
+            <div class="buttons-container">
+              <button class="test-option  musec" interval="perfect unison">PERFECT UNISON</button>
+              <button class="test-option  musec" interval="minor second">MINOR SECOND</button>
+              <button class="test-option  musec" interval="major second">MAJOR SECOND</button>
+              <button class="test-option  musec" interval="minor third">MINOR THIRD</button>
+              <button class="test-option  musec" interval="major third">MAJOR THIRD</button></button>
+              <button class="test-option  musec" interval="perfect fourth">PERFECT FOURTH</button>
+              <button class="test-option  musec" interval="diminished fifth">DIMINISHED FIFTH</button>
+              <button class="test-option  musec" interval="perfect fifth">PERFECT FIFTH</button>
+              <button class="test-option  musec" interval="minor sixth">MINOR SIXTH</button>
+              <button class="test-option  musec" interval="major sixth">MAJOR SIXTH</button>
+              <button class="test-option  musec" interval="minor seventh">MINOR SEVENTH</button>
+              <button class="test-option  musec" interval="major seventh">MAJOR SEVENTH</button>
+              <button class="test-option  musec" interval="octave">OCTAVE</button>
+            </div>
+          </div>
+          
+          <div class="col-sm-6">
+            <button class="play-again  musec">REPLAY INTERVAL</button>
+            
+            <h3 class="question  musec">What was the interval?</h3>
+            
+            <div id="stave"></div>
+            <p class="interval  musec"></p>
+            <h2 class="result  musec"></h2>
+            
+            <button class="play-another  musec" style="display:none;">New Interval</button>
+          </div>
+          <div class="col-sm-3">
+            <p class="correct-answer correct musec">Correct Answers: <span class="correct-answer-counter"></span></p>
+            <p class="wrong-answer wrong musec">Incorrect Answers: <span class="wrong-answer-counter"></span></p>
+          </div>
+          
+          
+        </div>
+        
+      
+      
+      </div>
+      <div class="col-sm-1"></div>
+    </div>
+    
+  </body>
+</html>
