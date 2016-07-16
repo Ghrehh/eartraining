@@ -228,6 +228,7 @@ $(document).ready(function () {
 
       $(".play-another").show();
       $(".buttons-container").hide();
+      $(".buttons-container2").hide();
       $(".question").addClass("transparent");
 
       correctAnswers += 1;
@@ -254,7 +255,14 @@ $(document).ready(function () {
     $(".test-option").removeClass("wrong-background"); //removes the red background from incorrect answers
 
     $(".play-another").hide();
-    $(".buttons-container").show();
+
+    if ($(window).width() > 800) {
+      //if window is not in mobile mode, show the desktop buttons container
+      $(".buttons-container").show();
+    } else {
+      $(".buttons-container2").show(); //else show the mobile one
+    }
+
     $(".question").removeClass("transparent");
 
     $(".result").html(" ");
