@@ -13,7 +13,9 @@ module.exports = function (grunt) {
                // if the source file has an extension of es6 then
                // we change the name of the source file accordingly.
                // The result file's extension is always .js
+
                "./build/scripts/build.js": ["./source/main.js"]
+
             }
          }
       },
@@ -30,4 +32,5 @@ module.exports = function (grunt) {
 
    grunt.registerTask("default", ["watch"]);
    grunt.registerTask("build", ["browserify"]);
+
 };
