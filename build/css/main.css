@@ -96,6 +96,16 @@ button:hover {
   margin: auto;
 }
 
+.copyright {
+  color: grey;
+  margin: 0px;
+  padding-top: 20px
+}
+
+.github {
+
+}
+
 @media (max-width: 800px) {
   .buttons-container {
     display: none;
